@@ -1,0 +1,13 @@
+logging:
+  level:
+    root: info
+    br.com.casaevideo.discordgateway: debug
+
+app:
+  openmeteo:
+    url-geocoding: https://geocoding-api.open-meteo.com/v1
+    url-forecast: https://api.open-meteo.com/v1
+  loremPokemon:
+    url: https://lorempokemon.fakerapi.it/pokemon
+  bot:
+    token: ${bot-token}
