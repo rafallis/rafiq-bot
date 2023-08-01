@@ -1,0 +1,12 @@
+{
+  "name": "weather",
+  "description": "Get Weather by city name",
+  "options": [
+    {
+      "name": "city_name",
+      "description": "Desired city name",
+      "type": 3,
+      "required": true
+    }
+  ]
+}
