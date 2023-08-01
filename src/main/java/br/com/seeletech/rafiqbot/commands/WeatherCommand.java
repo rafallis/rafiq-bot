@@ -70,7 +70,6 @@ public class WeatherCommand implements SlashCommand {
                 .build();
 
         return event.reply()
-                .withEmbeds(embed)
-                .withEphemeral(true);
+                .withEmbeds(embed);
     }
 }
