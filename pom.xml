@@ -15,7 +15,7 @@
 	<description>rafiq-bot</description>
 
 	<properties>
-		<java.version>20</java.version>
+		<java.version>17</java.version>
 
 		<docker.hub.acc>rafallis</docker.hub.acc>
 		<docker.hub.repo>rafiq-bot</docker.hub.repo>
