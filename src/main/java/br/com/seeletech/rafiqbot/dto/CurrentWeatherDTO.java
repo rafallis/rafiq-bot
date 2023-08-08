@@ -5,25 +5,27 @@ import lombok.*;
 @Data
 public class CurrentWeatherDTO {
 
-    public double latitude;
-    public double longitude;
-    public double generationtime_ms;
-    public int utc_offset_seconds;
-    public String timezone;
-    public String timezone_abbreviation;
-    public double elevation;
-    public CurrentWeather current_weather;
-    public String cityName;
-    public String state;
-    public String country;
+    private double latitude;
+    private double longitude;
+    private double generationtime_ms;
+    private int utc_offset_seconds;
+    private String timezone;
+    private String timezone_abbreviation;
+    private double elevation;
+    private CurrentWeather current_weather;
+    private String cityName;
+    private String state;
+    private String country;
+    private Double carbon_monoxide;
+    private Double suphur_dioxide;
 
     @Data
     public static class CurrentWeather {
-        public double temperature;
-        public double windspeed;
-        public double winddirection;
-        public int weathercode;
-        public int is_day;
-        public String time;
+        private double temperature;
+        private double windspeed;
+        private double winddirection;
+        private int weathercode;
+        private int is_day;
+        private String time;
     }
 }
