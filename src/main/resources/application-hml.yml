@@ -1,0 +1,8 @@
+logging:
+  level:
+    root: info
+    br.com.casaevideo.discordgateway: debug
+
+app:
+  bot:
+    ephemeral: true

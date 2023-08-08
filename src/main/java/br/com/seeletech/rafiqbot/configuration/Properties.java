@@ -29,6 +29,7 @@ public class Properties {
     public static class OpenMeteo {
         private String urlGeocoding;
         private String urlForecast;
+        private String urlAirQuality;
     }
 
     @Getter
@@ -41,5 +42,6 @@ public class Properties {
     @Setter
     public static class Bot {
         private String token;
+        private Boolean ephemeral;
     }
 }
