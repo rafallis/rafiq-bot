@@ -13,9 +13,9 @@ import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 @Slf4j
 @Service
@@ -46,23 +46,25 @@ public class OpenMeteoService {
                 CurrentWeatherDTO current = getCurrentWeather(
                         geoCoding.get("results").get(0).get("latitude").asText(),
                         geoCoding.get("results").get(0).get("longitude").asText());
+
                 AirQualityDTO airQuality = getAirQuality(
                         geoCoding.get("results").get(0).get("latitude").asText(),
                         geoCoding.get("results").get(0).get("longitude").asText());
 
-                Map<LocalDateTime, Double> carbonMonoxide =
-                        IntStream.range(0, airQuality.getHourly().getTime().size()).boxed()
-                                .collect(Collectors.toMap(
-                                        airQuality.getHourly().getTime()::get,
-                                        airQuality.getHourly().getCarbon_monoxide()::get
-                                ));
+                Map<LocalDateTime, Double> carbonMonoxide = new HashMap<>();
 
-                Map<LocalDateTime, Double> sulphurDioxide =
-                        IntStream.range(0, airQuality.getHourly().getTime().size()).boxed()
-                                .collect(Collectors.toMap(
-                                        airQuality.getHourly().getTime()::get,
-                                        airQuality.getHourly().getSulphur_dioxide()::get
-                                ));
+                Iterator<LocalDateTime> ik = airQuality.getHourly().getTime().iterator();
+                Iterator<Double> ivCarbon = airQuality.getHourly().getCarbon_monoxide().iterator();
+
+                while (ik.hasNext() && ivCarbon.hasNext()) {
+                    carbonMonoxide.put(ik.next(), ivCarbon.next());
+                }
+
+                Map<LocalDateTime, Double> sulphurDioxide = new HashMap<>();
+                Iterator<Double> ivSulphur = airQuality.getHourly().getSulphur_dioxide().iterator();
+                while (ik.hasNext() && ivSulphur.hasNext()) {
+                    sulphurDioxide.put(ik.next(), ivSulphur.next());
+                }
 
                 if (!ObjectUtils.isEmpty(current)) {
                     current.setCityName(geoCoding.get("results").get(0).get("name").asText());
