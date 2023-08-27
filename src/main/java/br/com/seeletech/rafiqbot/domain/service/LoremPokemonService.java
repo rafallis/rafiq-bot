@@ -1,8 +1,6 @@
 package br.com.seeletech.rafiqbot.domain.service;
 
-import br.com.seeletech.rafiqbot.configuration.Properties;
-import br.com.seeletech.rafiqbot.dto.CurrentWeatherDTO;
-import com.fasterxml.jackson.databind.JsonNode;
+import br.com.seeletech.rafiqbot.infrastructure.configuration.Properties;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.*;

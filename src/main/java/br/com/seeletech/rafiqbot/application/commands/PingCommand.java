@@ -1,4 +1,4 @@
-package br.com.seeletech.rafiqbot.commands;
+package br.com.seeletech.rafiqbot.application.commands;
 
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import org.springframework.stereotype.Component;

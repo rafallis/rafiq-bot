@@ -1,7 +1,7 @@
-package br.com.seeletech.rafiqbot.configuration;
+package br.com.seeletech.rafiqbot.infrastructure.configuration;
 
 
-import br.com.seeletech.rafiqbot.listeners.EventListener;
+import br.com.seeletech.rafiqbot.application.listeners.EventListener;
 import discord4j.core.DiscordClientBuilder;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.Event;

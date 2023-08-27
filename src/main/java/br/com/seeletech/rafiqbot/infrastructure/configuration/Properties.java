@@ -1,4 +1,4 @@
-package br.com.seeletech.rafiqbot.configuration;
+package br.com.seeletech.rafiqbot.infrastructure.configuration;
 
 import lombok.Getter;
 import lombok.Setter;

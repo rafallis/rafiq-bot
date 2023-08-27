@@ -1,6 +1,6 @@
-package br.com.seeletech.rafiqbot.listeners;
+package br.com.seeletech.rafiqbot.application.listeners;
 
-import br.com.seeletech.rafiqbot.commands.SlashCommand;
+import br.com.seeletech.rafiqbot.application.commands.SlashCommand;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import org.springframework.stereotype.Component;
