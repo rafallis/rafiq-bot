@@ -12,6 +12,11 @@ app:
     url-base: https://api.openweathermap.org/data/2.5/weather
     url-icon: https://openweathermap.org/img/wn
     token: ${openweather_token}
+  stock-data:
+    url-base: https://api.stockdata.org/v1/data/quote
+    token: ${stock_data_token}
+  thecatapi:
+    url-base: https://api.thecatapi.com/v1/images/search
   loremPokemon:
     url: https://lorempokemon.fakerapi.it/pokemon
   bot:

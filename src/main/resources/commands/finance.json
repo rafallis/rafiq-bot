@@ -1,0 +1,12 @@
+{
+  "name": "finance",
+  "description": "Get Finace by Finance Symbols",
+  "options": [
+    {
+      "name": "finance_symbols",
+      "description": "Desired Financial",
+      "type": 3,
+      "required": true
+    }
+  ]
+}
