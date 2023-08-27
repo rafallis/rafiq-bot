@@ -60,7 +60,6 @@ public class FinanceCommand implements SlashCommand {
                 .addField("Day Change", "$ " + stockData.getData().get(0).day_change, false)
                 .addField("Reference", "https://stockdata.org", false)
                 .footer("seeletech.com.br", "https://static.wikia.nocookie.net/evangelion/images/8/8e/SEELE_Logo.png/revision/latest?cb=20120312002542")
-                .image(image)
                 .build();
 
         return event.reply()
