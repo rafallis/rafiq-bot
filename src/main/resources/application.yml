@@ -8,8 +8,12 @@ app:
     url-geocoding: https://geocoding-api.open-meteo.com/v1
     url-forecast: https://api.open-meteo.com/v1
     url-air-quality: https://air-quality-api.open-meteo.com/v1
+  openweather:
+    url-base: https://api.openweathermap.org/data/2.5/weather
+    url-icon: https://openweathermap.org/img/wn
+    token: ${openweather_token}
   loremPokemon:
     url: https://lorempokemon.fakerapi.it/pokemon
   bot:
-    token: ${bot-token}
+    token: ${bot_token}
     ephemeral: false

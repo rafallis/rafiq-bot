@@ -24,6 +24,12 @@ public class SlashCommandListener {
         return Flux.fromIterable(commands)
                 .filter(command -> command.getName().equals(event.getCommandName()))
                 .next()
-                .flatMap(command -> command.handle(event));
+                .flatMap(command -> {
+                    try {
+                        return command.handle(event);
+                    } catch (Exception e) {
+                        return Mono.error(new RuntimeException(e));
+                    }
+                });
     }
 }

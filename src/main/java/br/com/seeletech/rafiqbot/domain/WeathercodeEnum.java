@@ -1,4 +1,4 @@
-package br.com.seeletech.rafiqbot.model.enums;
+package br.com.seeletech.rafiqbot.domain;
 
 import lombok.Getter;
 

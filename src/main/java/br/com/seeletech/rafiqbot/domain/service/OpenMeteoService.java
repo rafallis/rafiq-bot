@@ -1,4 +1,4 @@
-package br.com.seeletech.rafiqbot.service;
+package br.com.seeletech.rafiqbot.domain.service;
 
 import br.com.seeletech.rafiqbot.configuration.Properties;
 import br.com.seeletech.rafiqbot.dto.AirQualityDTO;

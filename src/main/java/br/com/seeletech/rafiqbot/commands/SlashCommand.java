@@ -7,5 +7,5 @@ public interface SlashCommand {
 
     String getName();
 
-    Mono<Void> handle(ChatInputInteractionEvent event);
+    Mono<Void> handle(ChatInputInteractionEvent event) throws Exception;
 }

@@ -1,4 +1,4 @@
-package br.com.seeletech.rafiqbot.service;
+package br.com.seeletech.rafiqbot.domain.service;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
