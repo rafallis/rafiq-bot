@@ -1,4 +1,4 @@
-package br.com.seeletech.rafiqbot.configuration;
+package br.com.seeletech.rafiqbot.infrastructure.configuration;
 
 import discord4j.common.JacksonResources;
 import discord4j.discordjson.json.ApplicationCommandRequest;

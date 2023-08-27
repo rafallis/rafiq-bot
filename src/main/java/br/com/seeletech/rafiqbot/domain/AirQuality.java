@@ -1,4 +1,4 @@
-package br.com.seeletech.rafiqbot.dto;
+package br.com.seeletech.rafiqbot.domain;
 
 import lombok.Data;
 
@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-public class AirQualityDTO {
+public class AirQuality {
 
     private double latitude;
     private double longitude;
